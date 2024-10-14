@@ -8,21 +8,17 @@ const Navbar = () => {
     const [cartItems, setCartItems] = useState(420);
     const [iconSize, setIconSize] = useState(getViewportWidth());
 
-    // Function to get current viewport width in vw
     function getViewportWidth() {
-        return window.innerWidth * 0.025; // 3vw
+        return window.innerWidth * 0.025; // 2.5vw
     }
 
     useEffect(() => {
-        // Function to handle resize and update the icon size
         const handleResize = () => {
             setIconSize(getViewportWidth());
         };
 
-        // Add event listener for window resize
         window.addEventListener('resize', handleResize);
 
-        // Clean up event listener on component unmount
         return () => {
             window.removeEventListener('resize', handleResize);
         };
