@@ -1,0 +1,119 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fff;
+    padding-inline: 2vw;
+    padding-block: 1.5vw;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 15%;
+}
+
+.navbar-logo img {
+    width: 4vw;
+    border-radius: 500px;
+    height: auto;
+    border: solid 0.2vw #000;
+}
+
+.navbar-logo p {
+    font-size: 2vw;
+    margin-left: 1vw;
+    color: #000;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar-logo a {
+    text-decoration: none;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 2vw;
+    width: fill;
+}
+
+.navbar-links li {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vw;
+    transition: 0.2s ease-out;
+}
+
+.navbar-links li:hover {
+    scale: 1.2;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-checkout {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 15%;
+}
+
+.cart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-container a {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vw;
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s ease-out;
+}
+
+.cart-container a:hover {
+    scale: 1.2;
+}
+
+.main-cart-icon {
+    position: relative;
+    margin-right: 1vw;
+    transition: 0.2s ease-out;
+}
+
+.main-cart-icon:hover {
+    scale: 1.2;
+}
+
+.cart-icon {
+    transform: rotateY(180deg);
+}
+
+.cart-count {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vw;
+    background-color: #f12121;
+    border-radius: 500px;
+    padding-block: 2px;
+    padding-inline: 10px;
+    color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    translate: -50% -50%;
+}
